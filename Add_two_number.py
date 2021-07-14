@@ -5,7 +5,11 @@ class ListNode:
          self.next = next
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode :
-        print(l1 + l2)
+        result = []
+        for i in range(len(l1)):
+            result.append(l1[i] + l2[i])
+            
+        print(result)
 
 
 Solution().addTwoNumbers([1,2,3], [2,3,4])
