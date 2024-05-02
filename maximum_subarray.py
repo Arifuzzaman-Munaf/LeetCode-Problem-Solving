@@ -3,9 +3,9 @@ from typing import List
 
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        max_sum = current_sum = 0
+        max_sum = current_sum = nums[0]
 
-        for i in nums:
+        for i in nums[1:]:
             if current_sum < 0:
                 current_sum = 0
 
